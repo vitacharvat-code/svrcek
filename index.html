@@ -612,12 +612,18 @@
 
         <!-- Success message (hidden) -->
         <div id="form-success"
-             class="hidden mt-6 bg-green-50 border border-green-200 rounded-xl p-5 text-center">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-green-500 mx-auto mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-          </svg>
-          <p class="font-bold text-green-700">Zpráva odeslána!</p>
-          <p class="text-sm text-green-600 mt-1">Brzy se vám ozveme.</p>
+             class="hidden mt-6 bg-brand-navy rounded-2xl p-8 text-center relative overflow-hidden">
+          <!-- Dekorativní kroužky -->
+          <div class="absolute -top-6 -right-6 w-24 h-24 rounded-full bg-white/5"></div>
+          <div class="absolute -bottom-4 -left-4 w-16 h-16 rounded-full bg-brand-red/10"></div>
+          <!-- Ikona -->
+          <div class="relative w-16 h-16 mx-auto mb-5 rounded-full bg-brand-red/10 flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-brand-red" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <p class="relative font-black text-white text-xl mb-2">Zpráva odeslána!</p>
+          <p class="relative text-white/50 text-sm">Děkujeme za poptávku. Ozveme se vám co nejdříve.</p>
         </div>
       </div>
 
